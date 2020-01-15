@@ -40,7 +40,18 @@ class Terbang:
     def airline(self):
         return self.numberku[:2]
 
-
+class AirCraft:
+    def __init__(self,registration,model,numrows,numseats,perrow):
+        self._registration = registration
+        self._model = model
+        self._numrows = numrows
+        self._numseats = numseats
+        self._perrow = perrow
+    def registration(self):
+        return self._registration
+    def model(self):
+        return self._model
+    
 try:
     fly = Terbang("GA123")
     flyku = fly.numberku;
