@@ -1,7 +1,29 @@
 
-# BelajarPython Day 1
+## BelajarPython Day 1
 def ==> for creating function
 identation ==> tab
 
 def fetch_world(url):
     """Fetch a list a word from URL """
+1.Quick, Safe, Efficient
+2.Fun
+3.Swiss Army, multipurposes
+4.clear,readble,expressive
+
+# StartCoding
+1. Instal python for windows
+py --version
+2. Read Evaluate Print Loop (REPL) >>>
+3. Set path Environment variable di system variable
+   python & python script (Tempat instalasi Python)
+
+   # sample 1
+    1.Create file sample.py
+    bil1 =12.5
+    bil2=17
+    hasil = bil1 * bil2
+    print(hasil)
+    print (type(hasil))
+    print (type(bil1))
+    print (type(bil2))
+    2.Run
