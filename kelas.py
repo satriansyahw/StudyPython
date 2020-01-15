@@ -22,3 +22,29 @@ t2.nama="AraKiran"
 print(t2.getName())
 print(t2.getRumah("Saya"))
 print(t2.rumah)
+
+
+class Terbang:
+    def __init__(self,number):
+        if not number[:2].isalpha():
+            raise ValueError("No airline code {}".format(number))
+        if not number[:2].isupper():
+            raise ValueError("Invalid airline code {}".format(number))
+        if not number[2:].isdigit():
+            raise ValueError("Invalid Route Number")
+        self.numberku = number
+        
+    def number(self):
+        return self.numberku
+    
+    def airline(self):
+        return self.numberku[:2]
+
+
+try:
+    fly = Terbang("GA123")
+    flyku = fly.numberku;
+    print(flyku)
+    print(fly.number())
+except ValueError:
+    print("Error, wrong flight ticket")
