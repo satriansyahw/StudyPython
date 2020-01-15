@@ -27,3 +27,16 @@ py --version
     print (type(bil1))
     print (type(bil2))
     2.Run
+
+    # import
+    import.math
+      help(math.sql)
+        hasil= math.sqrt(81)
+        print(hasil)
+
+    # install from vcode 
+        Python
+        Django
+        pythonExtensionPack
+
+
