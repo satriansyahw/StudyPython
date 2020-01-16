@@ -43,5 +43,9 @@ py --version
         always by reference
 
 ## BelajarPython Day 2
+#create djngo project : django-admin startproject namaproject
+ python manage.py runserver
+ python manage.py migrate : automate create db sqlite
+
 
 

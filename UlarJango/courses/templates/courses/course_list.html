@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block title %} Available Courses {% endblock %} 
+{% block content %} 
+    {% for course in courses %} 
+    <h2>{{ course.title }}</h2> 
+    {{ course.description }} 
+    {% endfor %} 
+{% endblock content %}
+{% comment %} {% for course in courses %} 
+<h2>{{ course.title }}</h2> 
+{{ course.description }} 
+{% endfor %} {% endcomment %}
