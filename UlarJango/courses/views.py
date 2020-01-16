@@ -8,4 +8,7 @@ def course_list(request):
     return render(request,'courses/course_list.html',{'courses':courses})
 #    return HttpResponse(output)
 
+def course_detail(request,pk):
+    course = Course.objects.get(pk=pk)
+    return render(request,'courses/course_detail.html',{'course':course})
 # Create your views here.

@@ -70,7 +70,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'UlarJango.wsgi.application'
 
-
+STATIC_URL = '/static/' 
+STATICFILES_DIRS = ( #static assets directory for css, images, etc 
+                    os.path.join(BASE_DIR, 'assets'), )
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
@@ -119,3 +121,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS=(
+    os.path.join(BASE_DIR, 'assets'),
+)
