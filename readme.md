@@ -46,6 +46,10 @@ py --version
 #create djngo project : django-admin startproject namaproject
  python manage.py runserver
  python manage.py migrate : automate create db sqlite
+ ## appsinsight : app service monitoring
+ # sharing token private key
+   1 server create token... punya private key
+   server lain bisa akses juga asal punya private key yang sama 
 
 
 
