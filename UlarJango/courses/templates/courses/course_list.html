@@ -1,13 +1,18 @@
-{% extends 'sblayout.html' %}
-
-{% block title %}
-    Available Courses
-{% endblock title %}
-
-{% block content %}
-    {% for course in courses %}
-    <h2>{{ course.title }}</h2>
-    <p>{{ course.description }}</p>
-    {% endfor %}
-{% endblock content %}
-
+{% extends 'layout.html' %}
+{% load static %}
+{% block static %}
+    <link rel="stylesheet" href="{% static 'courses/css/courses.css' %}">
+{% endblock %} 
+{% block title %} 
+    Available Courses 
+    {% endblock %} 
+{% block content %} 
+<div class="cards">
+{% for course in courses %}
+    <div class="card"> 
+        <header><a href="{% url 'courses:detail' pk=course.pk %}">{{ course.title}}</a></header>
+        <div class="card-copy"> {{ course.description }} </div> 
+    </div> 
+{% endfor %} 
+</div> 
+{% endblock %}

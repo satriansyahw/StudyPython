@@ -14,6 +14,8 @@ class Step(models.Model):
     description =models.TextField()
     order = models.IntegerField(default=0) 
     course = models.ForeignKey(Course,on_delete=models.CASCADE) 
-    
+    content = models.TextField(blank=True,default='')
+    class Meta:
+        ordering =['-order','title',] #order desc 
     def __str__(self): return self.title
     
